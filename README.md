@@ -1,4 +1,5 @@
-# ECIES for bcccore
+Bcccore ECIES
+======
 
 [![NPM Package](https://img.shields.io/npm/v/bcccore-ecies.svg?style=flat-square)](https://www.npmjs.org/package/bcccore-ecies)
 [![Build Status](https://img.shields.io/travis/owstack/bcccore-ecies.svg?branch=master&style=flat-square)](https://travis-ci.org/owstack/bcccore-ecies)

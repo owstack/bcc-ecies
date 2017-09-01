@@ -1,7 +1,7 @@
 {
   "name": "bcccore-ecies",
   "version": "0.0.1",
-  "description": "ECIES implemented for Bcccore.",
+  "description": "ECIES support for Bcccore.",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -24,7 +24,6 @@
     "cryptography",
     "encryption"
   ],
-  "author": "Open Wallet Stack",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/owstack/bcccore-ecies/issues"
@@ -40,6 +39,6 @@
   },
   "dependencies": {
     "aes": "^0.1.0",
-    "bcccore-lib": "git://github.com/owstack/bcccore-lib.git#master"
+    "bcccore-lib": "git://github.com/owstack/bcccore-lib.git"
   }
 }
