@@ -1,6 +1,6 @@
 {
   "name": "bcccore-ecies",
-  "version": "1.0.3",
+  "version": "0.0.1",
   "description": "ECIES implemented for Bcccore.",
   "main": "index.js",
   "directories": {
