@@ -1,6 +1,3 @@
 'use strict';
-
-var gulp_bcccore = require('bcccore-build');
-
-gulp_bcccore('ecies');
-
+var owsTasks = require('ows-build');
+owsTasks('bcccore', 'ecies');
