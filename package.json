@@ -29,16 +29,16 @@
     "url": "https://github.com/owstack/bcccore-ecies/issues"
   },
   "homepage": "https://github.com/owstack/bcccore-ecies",
+  "dependencies": {
+    "aes": "^0.1.0",
+    "bcccore-lib": "https://github.com/owstack/bcccore-lib"
+  },
   "devDependencies": {
     "assert": "^1.1.2",
     "brfs": "^1.2.0",
     "browserify": "^8.1.0",
     "chai": "~1.10.0",
     "gulp": "^3.8.10",
-    "ows-build": "git://github.com/owstack/ows-build.git"
-  },
-  "dependencies": {
-    "aes": "^0.1.0",
-    "bcccore-lib": "git://github.com/owstack/bcccore-lib.git"
+    "ows-build": "https://github.com/owstack/ows-build"
   }
 }
