@@ -3,10 +3,8 @@
 var ECIES = require('../');
 
 var should = require('chai').should();
-var bcccore = require('bcccore-lib');
-var PrivateKey = bcccore.PrivateKey;
-
-
+var bccLib = require('bcc-lib');
+var PrivateKey = bccLib.PrivateKey;
 
 var aliceKey = new PrivateKey('L1Ejc5dAigm5XrM3mNptMEsNnHzS7s51YxU7J61ewGshZTKkbmzJ');
 var bobKey = new PrivateKey('KxfxrUXSMjJQcb3JgnaaA6MqsrKQ1nBSxvhuigdKRyFiEm6BZDgG');
@@ -121,11 +119,11 @@ describe('ECIES', function() {
   });
 
   it('errors', function() {
-    should.exist(bcccore.errors.ECIES);
+    should.exist(bccLib.errors.ECIES);
   });
 
   it('correctly fails if trying to decrypt a bad message', function() {
-    var encrypted = bcccore.util.buffer.copy(encBuf);
+    var encrypted = bccLib.util.buffer.copy(encBuf);
     encrypted[encrypted.length - 1] = 2;
     (function() { 
       return bob.decrypt(encrypted);
@@ -136,12 +134,12 @@ describe('ECIES', function() {
     var secret = 'test';
 
     // test uncompressed
-    var alicePrivateKey = new bcccore.PrivateKey.fromObject({
+    var alicePrivateKey = new bccLib.PrivateKey.fromObject({
       bn: '1fa76f9c799ca3a51e2c7c901d3ba8e24f6d870beccf8df56faf30120b38f360',
       compressed: false,
       network: 'livenet'
     });
-    var alicePublicKey = new bcccore.PublicKey.fromPrivateKey(alicePrivateKey); // alicePrivateKey.publicKey
+    var alicePublicKey = new bccLib.PublicKey.fromPrivateKey(alicePrivateKey); // alicePrivateKey.publicKey
     alicePrivateKey.compressed.should.equal(false);
 
     var cypher1 = ECIES().privateKey(alicePrivateKey).publicKey(alicePublicKey);
@@ -156,12 +154,12 @@ describe('ECIES', function() {
     var secret = 'test';
 
     // test compressed
-    var alicePrivateKey = new bcccore.PrivateKey.fromObject({
+    var alicePrivateKey = new bccLib.PrivateKey.fromObject({
       bn: '1fa76f9c799ca3a51e2c7c901d3ba8e24f6d870beccf8df56faf30120b38f360',
       compressed: true,
       network: 'livenet'
     });
-    var alicePublicKey = new bcccore.PublicKey.fromPrivateKey(alicePrivateKey); // alicePrivateKey.publicKey
+    var alicePublicKey = new bccLib.PublicKey.fromPrivateKey(alicePrivateKey); // alicePrivateKey.publicKey
     alicePrivateKey.compressed.should.equal(true);
 
     var cypher1 = ECIES().privateKey(alicePrivateKey).publicKey(alicePublicKey);

@@ -1,7 +1,7 @@
 # ECIES
-Bcccore implements [Elliptic Curve Integrated Encryption Scheme (ECIES)](http://en.wikipedia.org/wiki/Integrated_Encryption_Scheme), which is a public key encryption system that performs bulk encryption on data using a symmetric cipher and a random key.
+Implements [Elliptic Curve Integrated Encryption Scheme (ECIES)](http://en.wikipedia.org/wiki/Integrated_Encryption_Scheme), which is a public key encryption system that performs bulk encryption on data using a symmetric cipher and a random key.
 
-For more information refer to the [bcccore-ecies](https://github.com/owstack/bcccore-ecies) github repo.
+For more information refer to the [bcc-ecies](https://github.com/owstack/bcc-ecies) github repo.
 
 ## Installation
 ECIES is implemented as a separate module and you must add it to your dependencies:
@@ -9,23 +9,23 @@ ECIES is implemented as a separate module and you must add it to your dependenci
 For node projects:
 
 ```bash
-npm install bcccore-ecies --save
+npm install bcc-ecies --save
 ```
 
 For client-side projects:
 
 ```bash
-bower install bcccore-ecies --save
+bower install bcc-ecies --save
 ```
 
 ## Example
 
 ```javascript
-var bcccore = require('bcccore-lib');
-var ECIES = require('bcccore-ecies');
+var bccLib = require('bcc-lib');
+var ECIES = require('bcc-ecies');
 
-var alicePrivateKey = new bcccore.PrivateKey();
-var bobPrivateKey = new bcccore.PrivateKey();
+var alicePrivateKey = new bccLib.PrivateKey();
+var bobPrivateKey = new bccLib.PrivateKey();
 
 var data = new Buffer('The is a raw data example');
 

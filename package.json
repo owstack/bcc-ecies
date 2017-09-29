@@ -1,7 +1,7 @@
 {
-  "name": "bcccore-ecies",
+  "name": "bcc-ecies",
   "version": "0.0.1",
-  "description": "ECIES support for Bcccore.",
+  "description": "ECIES support for Bcc Node.",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -14,11 +14,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/owstack/bcccore-ecies.git"
+    "url": "https://github.com/owstack/bcc-ecies.git"
   },
   "keywords": [
     "bitcoin",
-    "bcccore",
+    "bcc",
     "ecies",
     "crypto",
     "cryptography",
@@ -26,12 +26,12 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/owstack/bcccore-ecies/issues"
+    "url": "https://github.com/owstack/bcc-ecies/issues"
   },
-  "homepage": "https://github.com/owstack/bcccore-ecies",
+  "homepage": "https://github.com/owstack/bcc-ecies",
   "dependencies": {
     "aes": "^0.1.0",
-    "bcccore-lib": "https://github.com/owstack/bcccore-lib"
+    "bcc-lib": "https://github.com/owstack/bcc-lib"
   },
   "devDependencies": {
     "assert": "^1.1.2",
