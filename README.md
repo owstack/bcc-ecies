@@ -1,6 +1,8 @@
 Bch ECIES
 ======
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/owstack/bch-ecies.svg)](https://greenkeeper.io/)
+
 [![NPM Package](https://img.shields.io/npm/v/bch-ecies.svg?style=flat-square)](https://www.npmjs.org/package/bch-ecies)
 [![Build Status](https://img.shields.io/travis/owstack/bch-ecies.svg?branch=master&style=flat-square)](https://travis-ci.org/owstack/bch-ecies)
 [![Coverage Status](https://img.shields.io/coveralls/owstack/bch-ecies.svg?style=flat-square)](https://coveralls.io/r/owstack/bch-ecies)
