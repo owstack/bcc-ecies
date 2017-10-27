@@ -21,8 +21,8 @@ bower install bch-ecies --save
 ## Example
 
 ```javascript
-var bchLib = require('bch-lib');
-var ECIES = require('bch-ecies');
+var bchLib = require('@owstack/bch-lib');
+var ECIES = require('@owstack/bch-ecies');
 
 var alicePrivateKey = new bchLib.PrivateKey();
 var bobPrivateKey = new bchLib.PrivateKey();

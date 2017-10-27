@@ -3,7 +3,7 @@
 var ECIES = require('../');
 
 var should = require('chai').should();
-var bchLib = require('bch-lib');
+var bchLib = require('@owstack/bch-lib');
 var PrivateKey = bchLib.PrivateKey;
 
 var aliceKey = new PrivateKey('L1Ejc5dAigm5XrM3mNptMEsNnHzS7s51YxU7J61ewGshZTKkbmzJ');
