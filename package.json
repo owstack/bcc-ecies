@@ -1,6 +1,6 @@
 {
   "name": "@owstack/bch-ecies",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "ECIES support for Bch Node.",
   "main": "index.js",
   "directories": {
@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/owstack/bch-ecies",
   "dependencies": {
-    "@owstack/bch-lib": "^0.0.5",
+    "@owstack/bch-lib": "^0.0.6",
     "aes": "^0.1.0"
   },
   "devDependencies": {
